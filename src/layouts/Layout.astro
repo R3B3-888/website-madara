@@ -26,6 +26,23 @@ const { title, description = "Studio Madara - Branding & Vidéo par Maxime Hoffm
 </html>
 
 <style is:global>
+  :root {
+    --color-primary: #000dff;
+    --color-secondary: #bb1681;
+    --color-pastel-pink: #f5d4e7;
+    --color-pastel-green: #c5e4e6;
+    
+    --color-dark: #1a1a1a;
+    --color-gray: #666;
+    --color-light-gray: #f8f8f8;
+    --color-white: #ffffff;
+    --color-border: #e0e0e0;
+    
+    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-secondary: linear-gradient(135deg, var(--color-pastel-pink) 0%, var(--color-pastel-green) 100%);
+    --gradient-hero: linear-gradient(135deg, var(--color-pastel-green) 0%, var(--color-white) 100%);
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -39,8 +56,8 @@ const { title, description = "Studio Madara - Branding & Vidéo par Maxime Hoffm
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #1a1a1a;
-    background: #ffffff;
+    color: var(--color-dark);
+    background: var(--color-white);
     overflow-x: hidden;
   }
 
@@ -69,25 +86,25 @@ const { title, description = "Studio Madara - Branding & Vidéo par Maxime Hoffm
   }
 
   .btn-primary {
-    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
-    color: #1a1a1a;
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    box-shadow: 0 4px 20px rgba(0, 13, 255, 0.3);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 30px rgba(0, 13, 255, 0.4);
   }
 
   .btn-secondary {
     background: transparent;
-    color: #1a1a1a;
-    border: 2px solid #1a1a1a;
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
   }
 
   .btn-secondary:hover {
-    background: #1a1a1a;
-    color: white;
+    background: var(--color-dark);
+    color: var(--color-white);
     transform: translateY(-2px);
   }
 
@@ -111,7 +128,7 @@ const { title, description = "Studio Madara - Branding & Vidéo par Maxime Hoffm
 
   p {
     line-height: 1.5;
-    color: #666;
+    color: var(--color-gray);
   }
 
   .fade-in {

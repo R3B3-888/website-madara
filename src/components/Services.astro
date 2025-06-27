@@ -54,7 +54,7 @@
 
 <style>
   .services {
-    background: #ffffff;
+    background: var(--color-white);
   }
 
   .services-header {
@@ -64,12 +64,12 @@
 
   .services-header h2 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .services-header p {
     font-size: 20px;
-    color: #666;
+    color: var(--color-gray);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -81,7 +81,7 @@
   }
 
   .service-card {
-    background: #f8f8f8;
+    background: var(--color-pastel-green);
     padding: 40px;
     border-radius: 16px;
     transition: all 0.3s ease;
@@ -96,35 +96,40 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    background: var(--gradient-primary);
   }
 
   .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 13, 255, 0.15);
+  }
+
+  .service-card:nth-child(2) {
+    background: var(--color-pastel-pink);
   }
 
   .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
-    color: #1a1a1a;
+    color: var(--color-white);
   }
 
   .service-card h3 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
     font-size: 24px;
   }
 
   .service-card > p {
     margin-bottom: 24px;
     line-height: 1.6;
+    color: var(--color-dark);
   }
 
   .service-features {
@@ -136,14 +141,14 @@
     padding: 8px 0;
     position: relative;
     padding-left: 24px;
-    color: #666;
+    color: var(--color-dark);
   }
 
   .service-features li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #d4af37;
+    color: var(--color-primary);
     font-weight: bold;
   }
 
@@ -157,23 +162,23 @@
   .price {
     font-size: 32px;
     font-weight: 700;
-    color: #d4af37;
+    color: var(--color-primary);
   }
 
   .price-unit {
-    color: #666;
+    color: var(--color-gray);
     font-size: 16px;
   }
 
   .service-link {
-    color: #d4af37;
+    color: var(--color-secondary);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
   }
 
   .service-link:hover {
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   @media (max-width: 768px) {

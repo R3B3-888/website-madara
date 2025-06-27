@@ -99,25 +99,25 @@ import Footer from '../components/Footer.astro';
 
 <style>
   .portfolio-hero {
-    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    background: var(--gradient-hero);
     padding-top: 120px;
     text-align: center;
   }
 
   .portfolio-hero h1 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .portfolio-hero p {
     font-size: 20px;
-    color: #666;
+    color: var(--color-gray);
     max-width: 600px;
     margin: 0 auto;
   }
 
   .portfolio-grid {
-    background: #ffffff;
+    background: var(--color-white);
   }
 
   .filters {
@@ -129,20 +129,20 @@ import Footer from '../components/Footer.astro';
 
   .filter-btn {
     background: transparent;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--color-border);
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: #666;
+    color: var(--color-gray);
     font-weight: 500;
   }
 
   .filter-btn:hover,
   .filter-btn.active {
-    background: #d4af37;
-    border-color: #d4af37;
-    color: #1a1a1a;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
   }
 
   .grid {
@@ -161,7 +161,7 @@ import Footer from '../components/Footer.astro';
 
   .portfolio-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 13, 255, 0.15);
   }
 
   .item-image {
@@ -187,7 +187,7 @@ import Footer from '../components/Footer.astro';
     left: 0;
     right: 0;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    color: white;
+    color: var(--color-white);
     padding: 32px 24px 24px;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -210,8 +210,8 @@ import Footer from '../components/Footer.astro';
 
   .category {
     display: inline-block;
-    background: #d4af37;
-    color: #1a1a1a;
+    background: var(--color-primary);
+    color: var(--color-white);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 12px;

@@ -165,25 +165,25 @@ import Footer from '../components/Footer.astro';
 
 <style>
   .contact-hero {
-    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    background: var(--gradient-hero);
     padding-top: 120px;
     text-align: center;
   }
 
   .contact-hero h1 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .contact-hero p {
     font-size: 20px;
-    color: #666;
+    color: var(--color-gray);
     max-width: 600px;
     margin: 0 auto;
   }
 
   .contact-section {
-    background: #ffffff;
+    background: var(--color-white);
   }
 
   .contact-grid {
@@ -195,12 +195,12 @@ import Footer from '../components/Footer.astro';
 
   .contact-info h2 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .contact-info > p {
     margin-bottom: 40px;
-    color: #666;
+    color: var(--color-gray);
     font-size: 18px;
     line-height: 1.6;
   }
@@ -219,39 +219,39 @@ import Footer from '../components/Footer.astro';
   .contact-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1a1a1a;
+    color: var(--color-white);
     flex-shrink: 0;
   }
 
   .contact-item h4 {
     margin-bottom: 4px;
-    color: #1a1a1a;
+    color: var(--color-dark);
     font-size: 18px;
   }
 
   .contact-item a {
-    color: #d4af37;
+    color: var(--color-primary);
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .contact-item a:hover {
-    color: #1a1a1a;
+    color: var(--color-secondary);
   }
 
   .contact-item p {
-    color: #666;
+    color: var(--color-gray);
     margin: 0;
   }
 
   .social-links h4 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .social-icons {
@@ -262,23 +262,23 @@ import Footer from '../components/Footer.astro';
   .social-icons a {
     width: 48px;
     height: 48px;
-    background: #f8f8f8;
+    background: var(--color-light-gray);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: var(--color-gray);
     transition: all 0.3s ease;
   }
 
   .social-icons a:hover {
-    background: #d4af37;
-    color: #1a1a1a;
+    background: var(--color-primary);
+    color: var(--color-white);
     transform: translateY(-2px);
   }
 
   .contact-form {
-    background: #f8f8f8;
+    background: var(--color-pastel-green);
     padding: 40px;
     border-radius: 16px;
   }
@@ -290,7 +290,7 @@ import Footer from '../components/Footer.astro';
   .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #1a1a1a;
+    color: var(--color-dark);
     font-weight: 500;
   }
 
@@ -299,9 +299,9 @@ import Footer from '../components/Footer.astro';
   .form-group textarea {
     width: 100%;
     padding: 16px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--color-border);
     border-radius: 8px;
-    background: white;
+    background: var(--color-white);
     font-size: 16px;
     transition: all 0.3s ease;
     font-family: inherit;
@@ -311,8 +311,8 @@ import Footer from '../components/Footer.astro';
   .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #d4af37;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 13, 255, 0.1);
   }
 
   .form-group textarea {

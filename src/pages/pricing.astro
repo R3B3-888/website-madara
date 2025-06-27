@@ -232,29 +232,29 @@ import Footer from '../components/Footer.astro';
 
 <style>
   .pricing-hero {
-    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    background: var(--gradient-hero);
     padding-top: 120px;
     text-align: center;
   }
 
   .pricing-hero h1 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .pricing-hero p {
     font-size: 20px;
-    color: #666;
+    color: var(--color-gray);
     max-width: 600px;
     margin: 0 auto;
   }
 
   .pricing-section {
-    background: #ffffff;
+    background: var(--color-white);
   }
 
   .pricing-section:nth-child(odd) {
-    background: #f8f8f8;
+    background: var(--color-light-gray);
   }
 
   .pricing-header {
@@ -264,12 +264,12 @@ import Footer from '../components/Footer.astro';
 
   .pricing-header h2 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .pricing-header p {
     font-size: 18px;
-    color: #666;
+    color: var(--color-gray);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -283,7 +283,7 @@ import Footer from '../components/Footer.astro';
   }
 
   .pricing-card {
-    background: white;
+    background: var(--color-white);
     border-radius: 16px;
     padding: 32px;
     position: relative;
@@ -293,11 +293,11 @@ import Footer from '../components/Footer.astro';
 
   .pricing-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 13, 255, 0.1);
   }
 
   .pricing-card.featured {
-    border-color: #d4af37;
+    border-color: var(--color-primary);
     transform: scale(1.05);
   }
 
@@ -310,8 +310,8 @@ import Footer from '../components/Footer.astro';
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background: #d4af37;
-    color: #1a1a1a;
+    background: var(--color-primary);
+    color: var(--color-white);
     padding: 8px 24px;
     border-radius: 20px;
     font-size: 14px;
@@ -326,7 +326,7 @@ import Footer from '../components/Footer.astro';
   .card-header h3 {
     font-size: 24px;
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .price {
@@ -338,25 +338,25 @@ import Footer from '../components/Footer.astro';
 
   .currency {
     font-size: 20px;
-    color: #d4af37;
+    color: var(--color-primary);
     font-weight: 600;
   }
 
   .amount {
     font-size: 48px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .period {
     font-size: 16px;
-    color: #666;
+    color: var(--color-gray);
   }
 
   .card-description {
     text-align: center;
     margin-bottom: 24px;
-    color: #666;
+    color: var(--color-gray);
     font-size: 16px;
   }
 
@@ -369,14 +369,14 @@ import Footer from '../components/Footer.astro';
     padding: 8px 0;
     position: relative;
     padding-left: 24px;
-    color: #666;
+    color: var(--color-gray);
   }
 
   .features li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #d4af37;
+    color: var(--color-primary);
     font-weight: bold;
   }
 
@@ -385,7 +385,7 @@ import Footer from '../components/Footer.astro';
   }
 
   .faq-section {
-    background: #f8f8f8;
+    background: var(--color-light-gray);
   }
 
   .faq-header {
@@ -395,12 +395,12 @@ import Footer from '../components/Footer.astro';
 
   .faq-header h2 {
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: var(--color-dark);
   }
 
   .faq-header p {
     font-size: 18px;
-    color: #666;
+    color: var(--color-gray);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -411,7 +411,7 @@ import Footer from '../components/Footer.astro';
   }
 
   .faq-item {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     margin-bottom: 16px;
     overflow: hidden;
@@ -419,7 +419,7 @@ import Footer from '../components/Footer.astro';
   }
 
   .faq-item:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 13, 255, 0.1);
   }
 
   .faq-question {
@@ -430,7 +430,7 @@ import Footer from '../components/Footer.astro';
     text-align: left;
     font-size: 18px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: var(--color-dark);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -439,7 +439,7 @@ import Footer from '../components/Footer.astro';
   }
 
   .faq-question:hover {
-    color: #d4af37;
+    color: var(--color-primary);
   }
 
   .faq-question svg {
@@ -462,7 +462,7 @@ import Footer from '../components/Footer.astro';
 
   .faq-answer p {
     padding: 0 24px 24px;
-    color: #666;
+    color: var(--color-gray);
     line-height: 1.6;
   }
 
