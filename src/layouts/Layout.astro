@@ -1,0 +1,149 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Studio Madara - Branding & Vidéo par Maxime Hoffmann" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .section-padding {
+    padding: 80px 0;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    color: #1a1a1a;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+  }
+
+  .btn-secondary:hover {
+    background: #1a1a1a;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  p {
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+    
+    .section-padding {
+      padding: 60px 0;
+    }
+    
+    .btn {
+      padding: 14px 24px;
+      font-size: 14px;
+    }
+  }
+</style>

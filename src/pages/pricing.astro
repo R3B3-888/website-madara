@@ -1,0 +1,518 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Tarifs - Studio Madara" description="Découvrez nos tarifs pour le branding et la vidéo">
+  <Header />
+  <main>
+    <section class="pricing-hero section-padding">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>Tarifs</h1>
+          <p>Des solutions adaptées à vos besoins et votre budget</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section section-padding" id="branding">
+      <div class="container">
+        <div class="pricing-header fade-in">
+          <h2>Branding</h2>
+          <p>Création d'identités visuelles fortes et mémorables</p>
+        </div>
+
+        <div class="pricing-cards">
+          <div class="pricing-card fade-in stagger-1">
+            <div class="card-header">
+              <h3>Journée</h3>
+              <div class="price">
+                <span class="currency">€</span>
+                <span class="amount">500</span>
+                <span class="period">par jour</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">Parfait pour des missions courtes et ciblées</p>
+              <ul class="features">
+                <li>Consultation stratégique</li>
+                <li>Recherches et concepts</li>
+                <li>Présentation des directions</li>
+                <li>Révisions incluses</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="/contact" class="btn btn-secondary">Demander un devis</a>
+            </div>
+          </div>
+
+          <div class="pricing-card featured fade-in stagger-2">
+            <div class="featured-badge">Recommandé</div>
+            <div class="card-header">
+              <h3>Forfait Complet</h3>
+              <div class="price">
+                <span class="currency">€</span>
+                <span class="amount">1500</span>
+                <span class="period">forfait évolutif</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">Solution complète pour une identité de marque cohérente</p>
+              <ul class="features">
+                <li>Audit de marque approfondi</li>
+                <li>Création du logo et variations</li>
+                <li>Charte graphique complète</li>
+                <li>Applications print & digital</li>
+                <li>Guide d'utilisation</li>
+                <li>3 mois de support</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="/contact" class="btn btn-primary">Démarrer le projet</a>
+            </div>
+          </div>
+
+          <div class="pricing-card fade-in stagger-3">
+            <div class="card-header">
+              <h3>Sur Mesure</h3>
+              <div class="price">
+                <span class="currency">€</span>
+                <span class="amount">?</span>
+                <span class="period">devis personnalisé</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">Pour des projets complexes et des besoins spécifiques</p>
+              <ul class="features">
+                <li>Analyse des besoins</li>
+                <li>Proposition personnalisée</li>
+                <li>Suivi dédié</li>
+                <li>Flexibilité maximale</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="/contact" class="btn btn-secondary">Nous contacter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section section-padding" id="video">
+      <div class="container">
+        <div class="pricing-header fade-in">
+          <h2>Vidéo</h2>
+          <p>Du tournage au montage, créons ensemble des contenus percutants</p>
+        </div>
+
+        <div class="pricing-cards">
+          <div class="pricing-card fade-in stagger-1">
+            <div class="card-header">
+              <h3>Tournage</h3>
+              <div class="price">
+                <span class="currency">€</span>
+                <span class="amount">500</span>
+                <span class="period">forfait</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">Captation professionnelle de vos contenus</p>
+              <ul class="features">
+                <li>Pré-production et repérages</li>
+                <li>Tournage professionnel</li>
+                <li>Matériel haute qualité</li>
+                <li>Fichiers bruts livrés</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="/contact" class="btn btn-secondary">Réserver</a>
+            </div>
+          </div>
+
+          <div class="pricing-card fade-in stagger-2">
+            <div class="card-header">
+              <h3>Montage</h3>
+              <div class="price">
+                <span class="currency">€</span>
+                <span class="amount">500</span>
+                <span class="period">forfait</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">Post-production soignée de vos vidéos</p>
+              <ul class="features">
+                <li>Montage et assemblage</li>
+                <li>Étalonnage des couleurs</li>
+                <li>Sound design</li>
+                <li>Formats adaptés</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="/contact" class="btn btn-secondary">Commander</a>
+            </div>
+          </div>
+
+          <div class="pricing-card featured fade-in stagger-3">
+            <div class="featured-badge">Populaire</div>
+            <div class="card-header">
+              <h3>Tournage + Montage</h3>
+              <div class="price">
+                <span class="currency">€</span>
+                <span class="amount">900</span>
+                <span class="period">forfait complet</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">Prestation complète de A à Z</p>
+              <ul class="features">
+                <li>Tout le forfait tournage</li>
+                <li>Tout le forfait montage</li>
+                <li>Coordination optimisée</li>
+                <li>10% d'économie</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="/contact" class="btn btn-primary">Choisir cette offre</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-padding">
+      <div class="container">
+        <div class="faq-header fade-in">
+          <h2>Questions Fréquentes</h2>
+          <p>Tout ce que vous devez savoir sur nos tarifs et prestations</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item fade-in stagger-1">
+            <button class="faq-question">
+              <span>Les tarifs incluent-ils les révisions ?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Oui, tous nos forfaits incluent un nombre raisonnable de révisions. Pour le branding, 3 tours de révisions sont inclus. Pour la vidéo, 2 tours de révisions sont inclus dans le montage.</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in stagger-2">
+            <button class="faq-question">
+              <span>Quels sont les délais de livraison ?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Pour le branding, comptez 2-3 semaines pour un forfait complet. Pour la vidéo, le tournage se fait sur 1-2 jours selon le projet, et le montage prend 1-2 semaines.</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in stagger-3">
+            <button class="faq-question">
+              <span>Proposez-vous des facilités de paiement ?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Oui, nous acceptons le paiement en plusieurs fois pour les forfaits. Généralement : 50% à la commande, 50% à la livraison. D'autres arrangements sont possibles selon le projet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .pricing-hero {
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .pricing-hero h1 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .pricing-hero p {
+    font-size: 20px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .pricing-section {
+    background: #ffffff;
+  }
+
+  .pricing-section:nth-child(odd) {
+    background: #f8f8f8;
+  }
+
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .pricing-header h2 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .pricing-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pricing-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-card.featured {
+    border-color: #d4af37;
+    transform: scale(1.05);
+  }
+
+  .pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-8px);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d4af37;
+    color: #1a1a1a;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .card-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .card-header h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .currency {
+    font-size: 20px;
+    color: #d4af37;
+    font-weight: 600;
+  }
+
+  .amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .period {
+    font-size: 16px;
+    color: #666;
+  }
+
+  .card-description {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #666;
+    font-size: 16px;
+  }
+
+  .features {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+
+  .features li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 24px;
+    color: #666;
+  }
+
+  .features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #d4af37;
+    font-weight: bold;
+  }
+
+  .card-footer {
+    text-align: center;
+  }
+
+  .faq-section {
+    background: #f8f8f8;
+  }
+
+  .faq-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .faq-header h2 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .faq-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-question {
+    width: 100%;
+    padding: 24px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .faq-question:hover {
+    color: #d4af37;
+  }
+
+  .faq-question svg {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 200px;
+  }
+
+  .faq-answer p {
+    padding: 0 24px 24px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-hero {
+      padding-top: 100px;
+    }
+
+    .pricing-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+      transform: none;
+    }
+
+    .pricing-card.featured:hover {
+      transform: translateY(-8px);
+    }
+
+    .amount {
+      font-size: 40px;
+    }
+
+    .faq-question {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+</style>
+
+<script>
+  // FAQ functionality
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question?.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
+      
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>

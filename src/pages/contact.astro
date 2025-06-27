@@ -1,0 +1,406 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact - Studio Madara" description="Contactez-nous pour discuter de votre projet">
+  <Header />
+  <main>
+    <section class="contact-hero section-padding">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>Démarrons votre projet</h1>
+          <p>Parlons de vos besoins et créons ensemble quelque chose d'exceptionnel</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <h2>Restons en contact</h2>
+            <p>Que vous ayez un projet précis ou simplement envie d'échanger sur vos idées, n'hésitez pas à nous contacter.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:hello@madara-studio.com">hello@madara-studio.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M22 16.92V19.92C22 20.5 21.39 20.97 20.83 20.92C10.28 19.92 1.08 10.72 0.08 0.17C0.03 -0.39 0.5 -1 1.08 -1H4.08C4.64 -1 5.11 -0.39 5.17 0.17C5.75 5.58 7.42 10.75 10.17 15.17C10.3 15.39 10.25 15.67 10.08 15.83L8.83 17.08C10.72 20.58 13.42 23.28 16.92 25.17L18.17 23.92C18.33 23.75 18.61 23.7 18.83 23.83C23.25 26.58 28.42 28.25 33.83 28.83C34.39 28.89 35 29.36 35 29.92V32.92C35 33.5 34.39 34 33.83 34Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Téléphone</h4>
+                  <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 21.7C17.3 17 20 13 20 10A8 8 0 0 0 4 10C4 13 6.7 17 12 21.7Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Localisation</h4>
+                  <p>Paris, France<br>Déplacements possibles</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>Suivez-nous</h4>
+              <div class="social-icons">
+                <a href="#" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" stroke="currentColor" stroke-width="2"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 8A6 6 0 0 1 22 14V21H18V14A2 2 0 0 0 14 14V21H10V9H14V11.5A6 6 0 0 1 16 8Z" stroke="currentColor" stroke-width="2"/>
+                    <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </a>
+                <a href="#" aria-label="Behance">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.5 4H20.5V6H15.5V4Z" fill="currentColor"/>
+                    <path d="M13 11.5A3.5 3.5 0 1 0 9.5 15H13V11.5Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M13 8.5A2.5 2.5 0 1 0 10.5 11H13V8.5Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 13A3.5 3.5 0 1 1 19.5 16.5H16V13Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form fade-in stagger-2">
+            <form class="form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Entreprise</label>
+                <input type="text" id="company" name="company">
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service souhaité *</label>
+                <select id="service" name="service" required>
+                  <option value="">Choisissez un service</option>
+                  <option value="branding">Branding</option>
+                  <option value="video">Vidéo</option>
+                  <option value="both">Branding + Vidéo</option>
+                  <option value="consultation">Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Budget approximatif</label>
+                <select id="budget" name="budget">
+                  <option value="">Sélectionnez votre budget</option>
+                  <option value="500-1000">500€ - 1000€</option>
+                  <option value="1000-2500">1000€ - 2500€</option>
+                  <option value="2500-5000">2500€ - 5000€</option>
+                  <option value="5000+">5000€+</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="timeline">Délai souhaité</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Sélectionnez un délai</option>
+                  <option value="urgent">Urgent (moins d'1 semaine)</option>
+                  <option value="1-2weeks">1-2 semaines</option>
+                  <option value="1month">1 mois</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Parlez-nous de votre projet *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet, vos objectifs, votre vision..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span>Envoyer le message</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/>
+                  <polygon points="22,2 15,22 11,13 2,9 22,2" fill="currentColor"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .contact-hero {
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .contact-hero h1 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .contact-hero p {
+    font-size: 20px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-section {
+    background: #ffffff;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .contact-info h2 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .contact-info > p {
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .contact-details {
+    margin-bottom: 40px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    flex-shrink: 0;
+  }
+
+  .contact-item h4 {
+    margin-bottom: 4px;
+    color: #1a1a1a;
+    font-size: 18px;
+  }
+
+  .contact-item a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-item a:hover {
+    color: #1a1a1a;
+  }
+
+  .contact-item p {
+    color: #666;
+    margin: 0;
+  }
+
+  .social-links h4 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background: #d4af37;
+    color: #1a1a1a;
+    transform: translateY(-2px);
+  }
+
+  .contact-form {
+    background: #f8f8f8;
+    padding: 40px;
+    border-radius: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    font-weight: 500;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 768px) {
+    .contact-hero {
+      padding-top: 100px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .contact-form {
+      padding: 32px 24px;
+    }
+
+    .contact-item {
+      margin-bottom: 24px;
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
+  }
+</style>
+
+<script>
+  // Form handling
+  const form = document.getElementById('contactForm') as HTMLFormElement;
+  const submitBtn = form?.querySelector('.submit-btn') as HTMLButtonElement;
+
+  if (form && submitBtn) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Disable submit button
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Envoi en cours...</span>';
+      
+      try {
+        // Simulate form submission (replace with actual endpoint)
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        
+        // Success feedback
+        submitBtn.innerHTML = '<span>Message envoyé !</span>';
+        submitBtn.style.background = '#10b981';
+        
+        // Reset form after delay
+        setTimeout(() => {
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = `
+            <span>Envoyer le message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/>
+              <polygon points="22,2 15,22 11,13 2,9 22,2" fill="currentColor"/>
+            </svg>
+          `;
+          submitBtn.style.background = '';
+        }, 3000);
+        
+      } catch (error) {
+        // Error feedback
+        submitBtn.innerHTML = '<span>Erreur - Réessayer</span>';
+        submitBtn.disabled = false;
+        console.error('Form submission error:', error);
+      }
+    });
+  }
+</script>

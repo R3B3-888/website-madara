@@ -1,0 +1,192 @@
+<section class="services section-padding">
+  <div class="container">
+    <div class="services-header fade-in">
+      <h2>Nos services</h2>
+      <p>Deux expertises complémentaires pour donner vie à votre vision créative</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card fade-in stagger-1">
+        <div class="service-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Branding</h3>
+        <p>Création d'identités visuelles fortes et cohérentes. Logo, charte graphique, supports de communication - tout pour affirmer votre personnalité de marque.</p>
+        <ul class="service-features">
+          <li>Identité visuelle complète</li>
+          <li>Logo et déclinaisons</li>
+          <li>Charte graphique</li>
+          <li>Supports print & digital</li>
+        </ul>
+        <div class="service-pricing">
+          <span class="price">500€</span>
+          <span class="price-unit">par jour</span>
+        </div>
+        <a href="/pricing#branding" class="service-link">En savoir plus</a>
+      </div>
+
+      <div class="service-card fade-in stagger-2">
+        <div class="service-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 7l-7 5 7 5V7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Vidéo</h3>
+        <p>De la conception au montage final, nous créons des contenus vidéos engageants. Tournage professionnel et post-production soignée pour captiver votre audience.</p>
+        <ul class="service-features">
+          <li>Tournage professionnel</li>
+          <li>Montage et étalonnage</li>
+          <li>Motion design</li>
+          <li>Formats adaptés</li>
+        </ul>
+        <div class="service-pricing">
+          <span class="price">500€</span>
+          <span class="price-unit">par forfait</span>
+        </div>
+        <a href="/pricing#video" class="service-link">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services {
+    background: #ffffff;
+  }
+
+  .services-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .services-header h2 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .services-header p {
+    font-size: 20px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+  }
+
+  .service-card {
+    background: #f8f8f8;
+    padding: 40px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+  }
+
+  .service-card h3 {
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    font-size: 24px;
+  }
+
+  .service-card > p {
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  .service-features {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+
+  .service-features li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 24px;
+    color: #666;
+  }
+
+  .service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #d4af37;
+    font-weight: bold;
+  }
+
+  .service-pricing {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #d4af37;
+  }
+
+  .price-unit {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .service-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .service-link:hover {
+    color: #1a1a1a;
+  }
+
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card {
+      padding: 32px 24px;
+    }
+
+    .services-header p {
+      font-size: 18px;
+    }
+  }
+</style>
