@@ -1,0 +1,159 @@
+<section class="faq-section section-padding">
+    <div class="container">
+    <div class="faq-header fade-in">
+        <h2>Questions Fréquentes</h2>
+        <p>Tout ce que vous devez savoir sur nos tarifs et prestations</p>
+    </div>
+
+    <div class="faq-list">
+        <div class="faq-item fade-in stagger-1">
+        <button class="faq-question">
+            <span>Les tarifs incluent-ils les révisions ?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, tous nos forfaits incluent un nombre raisonnable de révisions. Pour le branding, 3 tours de révisions sont inclus. Pour la vidéo, 2 tours de révisions sont inclus dans le montage.</p>
+        </div>
+        </div>
+
+        <div class="faq-item fade-in stagger-2">
+        <button class="faq-question">
+            <span>Quels sont les délais de livraison ?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="faq-answer">
+            <p>Pour le branding, comptez 2-3 semaines pour un forfait complet. Pour la vidéo, le tournage se fait sur 1-2 jours selon le projet, et le montage prend 1-2 semaines.</p>
+        </div>
+        </div>
+
+        <div class="faq-item fade-in stagger-3">
+        <button class="faq-question">
+            <span>Proposez-vous des facilités de paiement ?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, nous acceptons le paiement en plusieurs fois pour les forfaits. Généralement : 50% à la commande, 50% à la livraison. D'autres arrangements sont possibles selon le projet.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+<style>
+  .faq-section {
+    background: var(--color-light-gray);
+  }
+
+  .faq-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .faq-header h2 {
+    margin-bottom: 16px;
+    color: var(--color-dark);
+  }
+
+  .faq-header p {
+    font-size: 18px;
+    color: var(--color-gray);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: var(--color-white);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 13, 255, 0.1);
+  }
+
+  .faq-question {
+    width: 100%;
+    padding: 24px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .faq-question:hover {
+    color: var(--color-primary);
+  }
+
+  .faq-question svg {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 200px;
+  }
+
+  .faq-answer p {
+    padding: 0 24px 24px;
+    color: var(--color-gray);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .faq-question {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+</style>
+
+<script>
+  // FAQ functionality
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question?.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
+      
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
