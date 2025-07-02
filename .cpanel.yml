@@ -4,4 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/kova8661/madara-studio.fr
     - npm install
     - npm run build
+    - rm -rf $DEPLOYPATH/*
     - /usr/bin/rsync -av dist/ $DEPLOYPATH
